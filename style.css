@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.nav {
+    padding: 10px;
+    background-color: aqua;
+    width: 99%;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 960px;
+    width: 960px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+
+.box {
+    border: 1px solid black; 
+    flex: 1;
+}
+
