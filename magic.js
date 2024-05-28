@@ -15,16 +15,48 @@ const createDivs = (number) => {
 }
 
 const func = (event) => {
-    event.target.style.backgroundColor = "black"
+    value = Math.floor(1 + Math.random() * (10 - 1 + 1))
+    let color
+    switch (value) {
+        case 1:
+            color = "#808836"
+            break
+        case 2:
+            color = "#FFBF00"
+            break
+        case 3:
+            color = "#FF9A00"
+            break
+        case 4:
+            color = "#D10363"
+            break
+        case 5:
+            color = "#01204E"
+            break
+        case 6:
+            color = "#028391"
+            break
+        case 7:
+            color = "#F6DCAC"
+            break
+        case 8:
+            color = "#FF0000"
+            break
+        case 9:
+            color = "#FFA27F"
+            break
+        case 10:
+            color = "#97BE5A"
+            break
+    }
+    event.target.style.backgroundColor = color
+    event.target.style.transition = "300ms"
 }
 
 createDivs(16)
 
-const alert = () => {
-    const boxes = document.querySelectorAll(".box")
-    boxes.forEach(element => {
-        element.remove()
-    });
+const alertMessage = () => {
+    container.replaceChildren()
     size = prompt("Enter size (Maximum 100): ")
     createDivs(size)
 }
